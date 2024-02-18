@@ -11,10 +11,11 @@
 
 
 </head>
-<body class=" mx-auto  px-[178px] py-5 ">
+<body class=" md:container md:mx-auto px-48 ">
     <!-- header section with navigation bar -->
-    <header class="flex justify-between items-center pb-5">
+    <header class=" md:container md:mx-auto">
         <!-- nav bar section  -->
+       <div class="flex justify-between items-center pb-5">
         <div>
             <h2 class="text-[#030712] font-extrabold text-3xl ">A.S. Ticket</h2>
         </div>
@@ -25,6 +26,7 @@
             </button>
             
         </div>
+       </div>
         
     </header>
 
@@ -33,30 +35,126 @@
     <main>
         <!-- banner section  -->
         <section class=" ">
-        <div class="bg-no-repeat w-full h-screen mx-auto  px-16 py-5" style="background-image: url('images/banner.png') ;">
+        <div class="bg-no-repeat d w-full h-screen mx-auto  px-16 pt-5" style="background-image: url('images/banner.png') ;">
             <div class="flex-col text-center "> 
                 <h1 class="text-[#FFFFFF] font-extrabold text-[64px]">End-to-End Travel with <br><span class="text-[#1DD100]">A.S. Paribahan</span> </h1>
-                <p class="text-[#FFFFFF] text-xl py-7 ">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+                <p class="text-[#FFFFFF] text-xl pb-7 ">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
                 <button class=" bg-[#1DD100] text-[#030712] font-bold text-xl rounded-lg px-4 py-3 ">Buy Tickets</button>  
                 </div>
         </div>
         </section>
         <!-- offer section -->
-        <section class="offer-section ">
-            <h2 class="text-[#030712] font-bold text-4xl text-center  pb-8 ">Best offers for you</h2>
-            <div class="flex gap-8">
-                <div class="card w-[573px] h-[200px] bg-[#FFBF0F]">
-                    <div class="pl-[292px]">
-                      <img class=" "  src="images/cupon-devider.png" alt="" srcset="">
-                   </div>
+            <div>
+                <div>
+                    <h2 class="text-[#030712] font-bold text-4xl text-center  pb-4 ">Best offers for you</h2>
                 </div>
-                <div class="card w-[573px] h-[200px] bg-[#F78C9C]">
-                    <div class="pl-[292px]">
-                      <img class=" "  src="images/cupon-devider.png" alt="" srcset="">
-                  </div>
+                <div class="flex gap-8">
+                    <div class="card w-[573px]  bg-[#FFBF0F]">
+                        <div class="pl-[292px]">
+                          <img class=" "  src="images/cupon-devider.png" alt="" srcset="">
+                       </div>                       
+                    </div>
+                    
+                    <div class="card w-[573px]  bg-[#F78C9C]">
+                        
+                        <div class="pl-[292px]">
+                          <img class=" " src="images/cupon-devider.png" alt="" srcset="">
+                      </div>
+                      
+                    </div>
                 </div>
             </div>
-        </section>
+            <!-- ticket page -->
+            <section>
+                <div class=" border border-green-700 rounded-lg  w-full h-screen">
+                    <!-- 1st paribahan div -->
+                    <div class="px-16 py-16 ">
+                        <h2 class="text-center">P.H Paribahan</h2>
+                        <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+
+                        <!-- parbihin name and ticket price -->
+                        <div class="flex justify-between  pt-9 pb-6 px-4">
+                            <!-- greenline paribhan left side -->
+                            <div>
+                                <div class="flex justify-between gap-48 ">
+                                    <div class="flex ">
+                                        <div>
+                                            <img src="./images/bus-logo.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h2>Greenline Paribahan</h2>
+                                            <p>Coach-009-WEB ! AC_Business</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="flex items-center gap-2 bg-[#DAF3D6] px-7 py-2 rounded-lg">
+                                            <img class="w-6 h-6" src="images/stoppage.png" alt="">
+                                            <h5 class="text-[#1DD100] font-bold text-sm">40 Seats <br> left</h5>
+                                        
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="text-slate-400">
+                                    <div class="flex justify-between pb-4 pt-4">
+                                        <div>
+                                            <h4>Route</h4>
+                                        </div>
+                                        <div>
+                                            <h4>Dhaka to Sylet</h4>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="flex justify-between pb-4 pt-4">
+                                        <div>
+                                            <h4>Departure Time</h4>
+                                        </div>
+                                        <div>
+                                            <h4>9:00 PM</h4>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="flex justify-between gap-3 pt-5">
+                                    <div>
+                                        <button class="bg-[#DAF3D6] px-3 py-1 rounded-lg">Boarding Point - Laxmipur</button>
+                                    </div>
+                                    <div>
+                                        <button class="bg-[#DAF3D6] px-3 py-1 rounded-lg">Dropping Point - Bogura</button>
+                                    </div>
+                                    <div>
+                                        <button class="bg-[#DAF3D6] px-3 py-1 rounded-lg">Est. Time - 11 Hour</button>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <!-- greenline paribhan right side -->
+                            <div class="pt-10">
+                                <img src="images/fare.png" alt="">
+                                <div class="flex gap-2"> 
+                                    <div>
+                                        <h3 >550 </h3>
+                                    </div>
+                                    <div>
+                                        <h3 >Taka</h3>
+                                    </div>
+                                </div>
+                                <div class="flex gap-1"> 
+                                    <div>
+                                        <p>Per </p>
+                                    </div>
+                                    <div>
+                                        <p>Seat</p>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        
     </main>
 
 
