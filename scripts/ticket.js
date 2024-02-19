@@ -88,7 +88,7 @@ const applyCoupon = () => {
 
 
 
-// popup
+// success
 
 
 const section = document.querySelector("section"),
